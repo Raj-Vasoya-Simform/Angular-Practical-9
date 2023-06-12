@@ -17,7 +17,8 @@ Run `ng build` to build the project.
 you can also use the following commands:
 
 For production build:`ng build --configuration production`.
-For staging build: `ng build --configuration staging`
+
+For staging build: `ng build --configuration staging`.
 
 The build artifacts will be stored in the `dist/` directory.
 
@@ -33,8 +34,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 To lint your code and ensure code quality, you can use the following commands:
 
-To perform linting: npm run lint
-To automatically fix linting issues: npm run lint:fix
+To perform linting: `npm run lint`.
+
+To automatically fix linting issues: `npm run lint:fix`.
 
 Linting is done using ESLint.
 
@@ -42,5 +44,4 @@ Linting is done using ESLint.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
-# Angular-Practical-9
 # Angular-Practical-9
