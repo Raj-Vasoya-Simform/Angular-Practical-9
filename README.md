@@ -16,8 +16,8 @@ Run `ng build` to build the project.
 
 you can also use the following commands:
 
-For production build: ng build --configuration production
-For staging build: ng build --configuration staging
+For production build:`ng build --configuration production`.
+For staging build: `ng build --configuration staging`
 
 The build artifacts will be stored in the `dist/` directory.
 
