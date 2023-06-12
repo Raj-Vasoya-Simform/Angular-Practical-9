@@ -1,0 +1,72 @@
+<mat-dialog-content>
+  <header>
+    <h1>Add User Details </h1>
+  </header>
+  <div class="row">
+    <mat-card-title style="text-align: center"> Add User </mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="addUserForm" (ngSubmit)="addUser()">
+        <mat-form-field appearance="fill">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" required />
+          <mat-error *ngIf="formControls['name'].invalid"
+            >Name is required.</mat-error
+          >
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput formControlName="email" required />
+          <mat-error *ngIf="formControls['email'].invalid"
+            >Email is required and must be a valid email.</mat-error
+          >
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Department</mat-label>
+          <input matInput formControlName="department" required />
+          <mat-error *ngIf="formControls['department'].invalid"
+            >Department is required.</mat-error
+          >
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput formControlName="password" type="password" required />
+          <mat-error *ngIf="formControls['password'].invalid">
+            Password must be between 8 to 16 characters and contain at least 1
+            number and 1 special character.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Designation</mat-label>
+          <input matInput formControlName="designation" required />
+          <mat-error *ngIf="formControls['designation'].invalid"
+            >Designation is required.</mat-error
+          >
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Salary</mat-label>
+          <input matInput type="number" formControlName="salary" required />
+          <mat-error *ngIf="formControls['salary'].invalid"
+            >Salary is required.</mat-error
+          >
+        </mat-form-field>
+      </form>
+    </mat-card-content>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button
+    mat-raised-button
+    color="primary"
+    type="submit"
+    [disabled]="addUserForm.invalid"
+    (click)="addUser()"
+  >
+    Add User
+  </button>
+  <button mat-raised-button color="warn" mat-dialog-close>Cancle</button>
+</mat-dialog-actions>

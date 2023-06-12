@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+}
+
+.add-user-container {
+  flex: 1;
+  width: 25%;
+  padding-right: 10px;
+}
+
+.user-list-container {
+  flex: 3;
+  padding-left: 10px;
+  margin-right: 20px;
+}
+
+h1 {
+  text-align: center;
+}
